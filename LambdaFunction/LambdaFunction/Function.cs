@@ -21,8 +21,6 @@ namespace LambdaFunction
         /// <returns></returns>
         public int FunctionHandler(long input, ILambdaContext context)
         {
-            //return input?.ToUpper();
-
             if (input < 0)
                 throw new ArgumentOutOfRangeException(nameof(input));
 
